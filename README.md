@@ -50,11 +50,17 @@ Find the port number by doing a `docker ps -a`
 * The postgres container from a previous run is lingering
   * `docker stop <container_id>`
   * `docker rm <container_id>`
+  * make sure you are compiling and running in the correct version of java
 
 # Docker build
 
 Execute `docker build -t ms-v-cust-ws .`
 Execute `docker run -p 8080:8080 ms-v-cust-ws:latest`
+
+# Kubernetes
+
+Execute `kubectl apply -f k8s-ms-v-cust-service.yml -n <the_namespace>`
+Execute `http://<kube_url>:<node_port>/v1/api/customer/all`
 
 # References
 

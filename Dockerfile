@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Step 5: Use a minimal JDK image to run the Spring Boot app
-FROM eclipse-temurin:17-jdk-jammy
+FROM eclipse-temurin:21.0.3_9-jre
 
 # Step 6: Set the working directory for the runtime container
 WORKDIR /app

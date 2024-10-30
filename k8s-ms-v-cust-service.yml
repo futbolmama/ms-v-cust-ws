@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-v-cust-ws
+  labels:
+    run: ms-v-cust-ws
+    tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: ms-v-cust-ws
+      tier: backend
+  template:
+    metadata:
+      labels:
+        run: ms-v-cust-ws
+        tier: backend
+    spec:
+      containers: # docker build the image first
+        - name: ms-v-cust-ws
+          image: docker.io/futbolmama/ms-v-cust-ws:v1.0
+          ports:
+            - containerPort: 8080
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: ms-v-cust-ws
+  labels:
+    run: ms-v-cust-ws
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      nodePort: 30333
+  selector:
+    run: ms-v-cust-ws
+
