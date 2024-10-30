@@ -33,7 +33,7 @@ public class CustomerRepository {
     public Long save(Customer customer) {
         String sqlSave = """
                 insert into customer(f_name, m_name, l_name, email, phone)
-                values(:fName,:mName,:lName,:email:,:phone) returning id
+                values(:fName,:mName,:lName,:email,:phone) returning id
                 """;
         KeyHolder keyHolder = new GeneratedKeyHolder();
         jdbcClient.sql(sqlSave)
@@ -48,15 +48,15 @@ public class CustomerRepository {
 
     @Transactional
     public void update(Customer customer) {
-        String sqlUpdate = "update customer set f_name = ?, m_name = ?, l_name = ?, email = ?, phone = ?, modify_date = ? where id = ?";
+        String sqlUpdate = "update customer set f_name = :fName, m_name = :mName, l_name = :lName, email = :email, phone = :phone, modify_date = :modifyDate where id = :id";
         int count = jdbcClient.sql(sqlUpdate)
-                              .param(1, customer.fName())
-                              .param(2, customer.mName())
-                              .param(3, customer.lName())
-                              .param(4, customer.email())
-                              .param(5, customer.phone())
-                              .param(6, Timestamp.from(customer.modifyDate()))
-                              .param(7, customer.id())
+                              .param("fName", customer.fName())
+                              .param("mName", customer.mName())
+                              .param("lName", customer.lName())
+                              .param("email", customer.email())
+                              .param("phone", customer.phone())
+                              .param("modifyDate", Timestamp.from(customer.modifyDate()))
+                              .param("id", customer.id())
                               .update();
         if (count == 0) {
             throw new RuntimeException("Customer not found when updating record");

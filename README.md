@@ -28,13 +28,14 @@ launch the application via Maven, using Docker Compose to launch downstream cont
 * curl -v -X GET http://localhost:8080/v1/api/customer/1
 * curl -v -X POST -H "Content-Type: application/json" -d '{"fName": "Mel", "mName": "L", "lName": "Suarez", "email": "mel@o.co", "phone": "333-333-4444"}' http://localhost:8080/v1/api/customer
 * curl -v -X GET http://localhost:8080/v1/api/customer/2
+* curl -v -X DELETE http://localhost:8080/v1/api/customer/
+* curl -v -X GET http://localhost:8080/v1/api/customer/all
 
 
 ### Connecting to the postgres database defined in docker-compose.yml
 Execute `docker exec -it <container_id> psql -U testuser -d testdb`
 Execute `\dt` to see the tables
 Generate SQL to query
-
 
 * username - testdb
 * password - testuser
@@ -49,6 +50,11 @@ Find the port number by doing a `docker ps -a`
 * The postgres container from a previous run is lingering
   * `docker stop <container_id>`
   * `docker rm <container_id>`
+
+# Docker build
+
+Execute `docker build -t ms-v-cust-ws .`
+Execute `docker run -p 8080:8080 ms-v-cust-ws:latest`
 
 # References
 
