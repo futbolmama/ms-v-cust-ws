@@ -1,6 +1,7 @@
 package dev.futbolmama.msvcustws.db.repository;
 
 import dev.futbolmama.msvcustws.db.model.Customer;
+import java.sql.Timestamp;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.jdbc.core.simple.JdbcClient;
@@ -54,7 +55,7 @@ public class CustomerRepository {
                               .param(3, customer.lName())
                               .param(4, customer.email())
                               .param(5, customer.phone())
-                              .param(6, customer.modifyDate())
+                              .param(6, Timestamp.from(customer.modifyDate()))
                               .param(7, customer.id())
                               .update();
         if (count == 0) {

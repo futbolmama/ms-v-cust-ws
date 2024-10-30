@@ -22,12 +22,12 @@ Execute `mvn --batch-mode --update-snapshots --errors --projects application cle
 launch the application via Maven, using Docker Compose to launch downstream containers.
 
 ## Testing
-curl -X GET http://localhost:8080/v1/api/customer/all
-curl -X GET http://localhost:8080/v1/api/customer/1
-curl -X PUT -H "Content-Type: application/json" -d '{"id": 1, "fName": "Linda", "mName": "", "lName": "Suarez", "email": "me2@o.co", "phone": "111-333-4444"}' http://localhost:8080/v1/api/customer/1
-curl -X GET http://localhost:8080/v1/api/customer/1
-curl -X PUT -H "Content-Type: application/json" -d '{"id": 1, "fName": "Linda", "mName": "", "lName": "Suarez", "email": "me2@o.co", "phone": "111-333-4444"}' http://localhost:8080/v1/api/customer/1
-curl -X GET http://localhost:8080/v1/api/customer/2
+* curl -v -X GET http://localhost:8080/v1/api/customer/all
+* curl -v -X GET http://localhost:8080/v1/api/customer/1
+* curl -v -X PUT -H "Content-Type: application/json" -d '{"id": 1, "fName": "Linda", "mName": "", "lName": "Suarez", "email": "me2@o.co", "phone": "111-333-4444"}' http://localhost:8080/v1/api/customer/1
+* curl -v -X GET http://localhost:8080/v1/api/customer/1
+* curl -v -X POST -H "Content-Type: application/json" -d '{"fName": "Mel", "mName": "L", "lName": "Suarez", "email": "mel@o.co", "phone": "333-333-4444"}' http://localhost:8080/v1/api/customer
+* curl -v -X GET http://localhost:8080/v1/api/customer/2
 
 
 ### Connecting to the postgres database defined in docker-compose.yml
