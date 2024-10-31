@@ -2,6 +2,5 @@ dev/futbolmama/msvcustws/db/repository/CustomerRepository.class
 dev/futbolmama/msvcustws/controller/CreateCustomerRequest.class
 dev/futbolmama/msvcustws/controller/CustomerController.class
 dev/futbolmama/msvcustws/MsVCustWsApplication.class
-dev/futbolmama/msvcustws/service/CustomerService.class
 dev/futbolmama/msvcustws/db/model/Customer.class
 dev/futbolmama/msvcustws/controller/UpdateCustomerRequest.class

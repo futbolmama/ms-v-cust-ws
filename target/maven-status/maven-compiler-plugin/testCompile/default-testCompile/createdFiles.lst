@@ -1,3 +1,6 @@
-dev/futbolmama/msvcustws/TestMsVCustWsApplication.class
+dev/futbolmama/msvcustws/db/repository/CustomerRepositoryTest.class
+dev/futbolmama/msvcustws/controller/CustomerControllerTest.class
 dev/futbolmama/msvcustws/MsVCustWsApplicationTests.class
+dev/futbolmama/msvcustws/TestMsVCustWsApplication.class
 dev/futbolmama/msvcustws/TestcontainersConfiguration.class
+dev/futbolmama/msvcustws/AbstractIntegrationTest.class

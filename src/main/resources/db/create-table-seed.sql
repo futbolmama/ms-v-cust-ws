@@ -5,7 +5,7 @@ create table customer
     m_name      varchar(50),
     l_name      varchar(50)  not null,
     email       varchar(100) not null,
-    phone       varchar(15),
+    phone       varchar(20),
     modify_date timestamp default CURRENT_TIMESTAMP,
     create_date timestamp default CURRENT_TIMESTAMP
 );

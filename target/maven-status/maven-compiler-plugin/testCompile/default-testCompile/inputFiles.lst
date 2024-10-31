@@ -1,3 +1,6 @@
-/Users/msuarez/personal/training/ms-v-cust-ws/src/test/java/dev/futbolmama/msvcustws/MsVCustWsApplicationTests.java
-/Users/msuarez/personal/training/ms-v-cust-ws/src/test/java/dev/futbolmama/msvcustws/TestMsVCustWsApplication.java
-/Users/msuarez/personal/training/ms-v-cust-ws/src/test/java/dev/futbolmama/msvcustws/TestcontainersConfiguration.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/test/java/dev/futbolmama/msvcustws/AbstractIntegrationTest.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/test/java/dev/futbolmama/msvcustws/MsVCustWsApplicationTests.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/test/java/dev/futbolmama/msvcustws/TestMsVCustWsApplication.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/test/java/dev/futbolmama/msvcustws/TestcontainersConfiguration.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/test/java/dev/futbolmama/msvcustws/controller/CustomerControllerTest.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/test/java/dev/futbolmama/msvcustws/db/repository/CustomerRepositoryTest.java

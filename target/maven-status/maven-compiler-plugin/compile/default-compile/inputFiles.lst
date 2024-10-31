@@ -1,7 +1,6 @@
-/Users/msuarez/personal/training/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/MsVCustWsApplication.java
-/Users/msuarez/personal/training/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/controller/CreateCustomerRequest.java
-/Users/msuarez/personal/training/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/controller/CustomerController.java
-/Users/msuarez/personal/training/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/controller/UpdateCustomerRequest.java
-/Users/msuarez/personal/training/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/db/model/Customer.java
-/Users/msuarez/personal/training/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/db/repository/CustomerRepository.java
-/Users/msuarez/personal/training/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/service/CustomerService.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/MsVCustWsApplication.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/controller/CreateCustomerRequest.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/controller/CustomerController.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/controller/UpdateCustomerRequest.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/db/model/Customer.java
+/Users/msuarez/Documents/GitHub/ms-v-cust-ws/src/main/java/dev/futbolmama/msvcustws/db/repository/CustomerRepository.java

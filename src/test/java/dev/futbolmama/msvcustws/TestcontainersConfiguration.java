@@ -7,15 +7,15 @@ import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.utility.DockerImageName;
 
 @TestConfiguration(proxyBeanMethods = false)
-class TestcontainersConfiguration {
+public class TestcontainersConfiguration {
 
     @Bean
     @ServiceConnection
     PostgreSQLContainer<?> postgresContainer() {
         PostgreSQLContainer<?> postgresContainer = new PostgreSQLContainer<>(DockerImageName.parse("postgres:latest"))
                 .withDatabaseName("testdb")
-                .withUsername("testuser")
-                .withPassword("testpass");
+                .withUsername("postgres")
+                .withPassword("secret");
 
         postgresContainer.start();
 
