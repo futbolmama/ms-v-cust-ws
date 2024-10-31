@@ -3,11 +3,18 @@ services:
 
   postgres:
     image: postgres:latest
+    container_name: postgres
     environment:
-      - 'POSTGRES_DB=testdb'
-      - 'POSTGRES_USER=testuser'
-      - 'POSTGRES_PASSWORD=testpass'
+      - POSTGRES_DB=testdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=secret
     ports:
       - "5432"
     volumes:
-      - ./src/main/resources/db/create-table.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./src/main/resources/db/create-table-seed.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - ms-v-cust-network
+
+networks:
+  ms-v-cust-network:
+    name: ms-v-cust-network
